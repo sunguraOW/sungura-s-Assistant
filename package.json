@@ -1,0 +1,18 @@
+{
+  "name": "sungurascrimbot",
+  "version": "1.0.0",
+  "description": "This is Enzo's (sungura) Scrim Bot made for the NEXus server.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sungura#8206",
+  "license": "ISC",
+  "keywords": [
+    "sungura"
+  ],
+  "dependencies": {
+    "discord.js": "^11.4.2",
+    "dotenv": "^6.2.0"
+  }
+}
