@@ -21,6 +21,7 @@ const owner = settings.owner;
 fs.readdir('./cmds', (err,files) => {
     if (err) {
         console.log(err);
+        return;
     }
 
     let cmdFiles = files.filter(f => f.split(".").pop() === "js");
@@ -70,6 +71,7 @@ bot.on("message",msg => {
         if (validation(allowedRoles.roles,msg.member.roles.array()) || msg.member.id === owner){
             let cmd = bot.commands.get(command.slice(prefix.length))
             if (cmd){
+                console.log(`cmd: ${cmd}`)
                 cmd.run(bot,msg,args);
             }
 
